@@ -37,14 +37,15 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Database
   config.vm.provision :shell, path: "vagrant-scripts/install-sql-server.cmd" 
   config.vm.provision :shell, path: "vagrant-scripts/configure-sql-server.ps1"  
+  
+  #Restore DB
+  config.vm.provision :shell, path: "vagrant-scripts/create-database.cmd"
    
   # IIS   
   config.vm.provision :shell, path: "vagrant-scripts/install-iis.cmd"
-   
-  #Restore DB
-  config.vm.provision :shell, path: "vagrant-scripts/create-database.cmd"
-  
+    
   #Create Website
-  config.vm.provision :shell, path: "vagrant-scripts/creating-website-on-iis.cmd"
+  config.vm.provision :shell, path: "vagrant-scripts/create-website-folder.ps1"
+  config.vm.provision :shell, path: "vagrant-scripts/creating-website-in-iis.cmd"
   
 end
