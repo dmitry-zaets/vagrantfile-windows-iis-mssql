@@ -2,7 +2,7 @@
 $ErrorActionPreference = "Stop"
 
 echo "Copy website folder"
-Copy-Item C:\vagrant\sources\egZzzz.Web C:\egZzz -Recurse
+Copy-Item C:\vagrant\test-website C:\test-website -Recurse
 
 echo "Setting up access to folder"
-icacls "C:\egZzz" /grant 'Everyone:(OI)(CI)F'
+icacls "C:\test-website" /grant 'Everyone:(OI)(CI)F'
