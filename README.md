@@ -19,6 +19,6 @@ This repository contains Windows Vagrantfile ([Windows 2008 R2 x64 with Service 
 * Test website (website directory: `C:\test-website`) runned on IIS (based on repository \test-website folder).
 * MSSQL Database named `test`.(Username:`test`, Password:`abcABC123!`)
  
-**Missing provisioner for component?**
-Not a problem!
+**Missing provisioner for component?**  
+Not a problem!  
 Feel free to contact me via email: vagrantfile.windows@gmail.com
