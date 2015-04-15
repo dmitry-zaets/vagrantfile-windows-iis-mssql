@@ -7,4 +7,5 @@ Vagrantfile with Windows 2008 R2 which installs:
 * .NET 4.5
 * MS SQL Server 2008 R2
  
-Feel free to create issues for adding new components and software!
+**Missing provisioner for component?**
+**Not a problem! Feel fre to create an issue!**
