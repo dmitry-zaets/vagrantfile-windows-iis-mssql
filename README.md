@@ -10,4 +10,4 @@ Vagrantfile with Windows 2008 R2 which installs:
 * MS SQL Server 2008 R2
  
 **Missing provisioner for component?**
-Not a problem! Feel free to create an issue!
+Not a problem! Feel free to create an issue or write an email on vagrantfile.windows@gmail.com
