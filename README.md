@@ -20,4 +20,4 @@ This repository contains Windows Vagrantfile ([Windows 2008 R2 x64 with Service 
 * MSSQL Database named `test`.(Username:`test`, Password:`abcABC123!`)
  
 **Missing provisioner for component?**
-Not a problem! Feel free to create an issue or write an email on vagrantfile.windows@gmail.com
+Not a problem! Feel free to contact via email: vagrantfile.windows@gmail.com
