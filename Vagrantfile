@@ -45,7 +45,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :shell, path: "vagrant-scripts/install-iis.cmd"
     
   #Create Website
-  config.vm.provision :shell, path: "vagrant-scripts/create-website-folder.ps1"
+  config.vm.provision :shell, path: "vagrant-scripts/setup-permissions-for-website-folder.ps1"
   config.vm.provision :shell, path: "vagrant-scripts/creating-website-in-iis.cmd"
   
 end

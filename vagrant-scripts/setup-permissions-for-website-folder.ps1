@@ -2,4 +2,4 @@
 $ErrorActionPreference = "Stop"
 
 echo "Setting up access to folder"
-icacls "C:\vagrant\website" /grant 'Everyone:(OI)(CI)F'
+icacls "C:\test-website" /grant 'Everyone:(OI)(CI)F'
