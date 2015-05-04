@@ -26,7 +26,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.communicator = "winrm"
   
   config.vm.network "private_network", ip: "192.168.123.123"
-  config.vm.network :forwarded_port, guest: 85, host: 85
+  config.vm.network :forwarded_port, guest: 1025, host: 1025
   config.vm.network :forwarded_port, guest: 3389, host: 1234
   config.vm.network :forwarded_port, guest: 5985, host: 5985, id: "winrm", auto_correct: true
  
@@ -45,7 +45,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :shell, path: "vagrant-scripts/install-iis.cmd"
     
   #Create Website
-  config.vm.provision :shell, path: "vagrant-scripts/setup-permissions-for-website-folder.ps1"
   config.vm.provision :shell, path: "vagrant-scripts/creating-website-in-iis.cmd"
+  config.vm.provision :shell, path: "vagrant-scripts/setup-permissions-for-website-folder.ps1"
   
 end
