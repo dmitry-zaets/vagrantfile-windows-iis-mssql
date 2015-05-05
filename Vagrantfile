@@ -6,9 +6,9 @@ VAGRANTFILE_API_VERSION = "2"
 
 ENV['VAGRANT_DEFAULT_PROVIDER'] = 'virtualbox'
 
-if ! File.exists?('./NDP451-KB2858728-x86-x64-AllOS-ENU.exe')
-  puts '.Net 4.5 installer could not be found!'
-  puts "Please run:\n  wget http://download.microsoft.com/download/1/6/7/167F0D79-9317-48AE-AEDB-17120579F8E2/NDP451-KB2858728-x86-x64-AllOS-ENU.exe"
+if ! File.exists?('./NDP452-KB2901907-x86-x64-AllOS-ENU.exe')
+  puts '.Net 4.5.2 installer could not be found!'
+  puts "Please run:\n curl -O http://download.microsoft.com/download/E/2/1/E21644B5-2DF2-47C2-91BD-63C560427900/NDP452-KB2901907-x86-x64-AllOS-ENU.exe"
   exit 1
 end
 
