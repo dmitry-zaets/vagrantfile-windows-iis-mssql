@@ -22,8 +22,8 @@
           <h2 id="project_tagline">Vagrantfile with Windows 2008 R2, IIS 7.5, .NET 4.5, MS SQL Server</h2>
 
             <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/dmitry-zaets/vagrantfile-windows-iis-mssql/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/dmitry-zaets/vagrantfile-windows-iis-mssql/tarball/master">Download this project as a tar.gz file</a>
+              <a class="zip_download_link" onclick ="window.tracker._trackEvent('Header', 'Download as Zip')" href="https://github.com/dmitry-zaets/vagrantfile-windows-iis-mssql/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" onclick ="window.tracker._trackEvent('Header', 'Download as Tar')" href="https://github.com/dmitry-zaets/vagrantfile-windows-iis-mssql/tarball/master">Download this project as a tar.gz file</a>
             </section>
         </header>
     </div>
@@ -85,11 +85,10 @@ Feel free to contact me via email: <a href="mailto:vagrantfile.windows@gmail.com
           </script>
           <script type="text/javascript">
             try {
-              var pageTracker = _gat._getTracker("UA-62626338-1");
-            pageTracker._trackPageview();
+            
+              var  window.tracker =  _gat._createTracker('UA-62626338-1');
+               window.tracker._trackPageview();
             } catch(err) {}
           </script>
-
-
   </body>
 </html>
