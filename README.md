@@ -1,4 +1,4 @@
-Vagrantfile for testing ASP.NET (MVC) Websites on Windows
+Test Vagrantfile for testing ASP.NET (MVC) Websites on Windows
 =============================
 
 This repository contains Windows Vagrantfile ([Windows 2008 R2 x64 with Service Pack 1](https://vagrantcloud.com/ferventcoder/boxes/win2008r2-x64-nocm)) with all that you need to test ASP.NET Website.
